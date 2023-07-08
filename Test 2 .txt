@@ -17,7 +17,7 @@ ANS 14:	south east
 
 													JAVA:
 													
-ANS 1:	"True."
+ANS 1:	error
 ANS 2:	10,110
 ANS 3:	error
 ANS 4: 	main method is static because it is invoked by JVM directly 
