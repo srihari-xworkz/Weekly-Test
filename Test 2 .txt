@@ -1,0 +1,76 @@
+													APTITUDE:
+					
+ANS 1:	maternal Uncle (d)
+ANS 2:	Grand Father (b)
+ANS 3:	sister (c)
+ANS 4:	brother (d)
+ANS 5:	grandson (c)
+ANS 6:	X+A*Y (c)
+ANS 7:	R (c)
+ANS	8:	brother in law (b)
+ANS 9:	father (a)
+ANS 10:	S(c)
+ANS 11:	10kms (a)
+ANS 12:	south (b)
+ANS 13:	south west (a)
+ANS 14:	south east 	
+
+													JAVA:
+													
+ANS 1:	"True."
+ANS 2:	10,110
+ANS 3:	error
+ANS 4: 	main method is static because it is invoked by JVM directly 
+ANS 5: 	public class Array {  
+		public static void main(String[] args) 
+		{  
+			int [] array = new int [] {10,45,7,9,2};  
+			System.out.println("Original array: ");  
+			for (int start = 0; start < arr.length; start++) {  
+				System.out.print(arr[start] + " ");  
+			}  
+			System.out.println("Array in reverse order: ");  
+          
+			for (int start = arr.length-1; start >= 0; start--) {  
+				System.out.print(arr[start] + " ");  
+			}  
+			}  
+		}  
+ANS 6:	
+
+ANS 7:	Done
+
+ANS 8:	this is a keyword used to refer to the instance variable of the current class and also to distinguish 
+		when both the local variable and the instance variable are of same name whereas this() is used during constructor
+		chaining(calling a constructor from another constructor).
+
+ANS 9:	class Swap   
+		{  
+			public static void main(String args[])   
+			{
+				int a = 1;  
+				int b = 2;  
+				System.out.println("before swapping numbers: "+a +" "+ b);  
+				a = a + b;   
+				b = a - b;   
+				a = a - b;   
+				System.out.println("After swapping: "+a +"  " + b);   
+			}   
+		}
+
+ANS 10:	class Ttemp{
+		public static void main(String args[])   
+		{
+			System.out.println("& &");
+			System.out.println(" & ");
+			System.out.println("& &");
+			System.out.println("------------------");
+			System.out.println("% % %");
+			System.out.println("% & %");
+			System.out.println("% % %");
+			System.out.println("------------------");
+			System.out.println("% % %");
+			System.out.println("%   %");
+			System.out.println("% % %");
+		}
+		}
