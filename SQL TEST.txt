@@ -1,0 +1,27 @@
+									SQL
+									
+ANS 1 :  CREATE DATABASE xworkz;
+
+ANS 2 : CREATE TABLE class (student_name VARCHAR(50), usn INT, f_name VARCHAR(20));
+
+ANS 3 : ALTER TABLE class ADD (location VARCHAR(50));
+
+ANS 4 : ALTER class DROP f_name;
+
+ANS 5 : ALTER TABLE class RENAME f_name to father_name; 
+
+ANS 6 : ALTER TABLE class MODIFY usn SET BIGINT;
+
+ANS 7 : UPDATE tablename SET columnname=value1,value2 WHERE condition;
+
+ANS 8 : DELETE from tablename WHERE condition;
+
+ANS 9 : SELECT columnname, POSITION('char' IN columnname) AS POSITION_char FROM tablename;
+
+ANS 10 : COUNT, AVG, SUM, MIN, MAX
+		
+	SELECT COUNT(column_name)FROM table_name WHERE condition;
+	SELECT AVG(column_name)FROM table_name WHERE condition;
+	SELECT SUM(column_name) FROM table_name WHERE condition;
+	SELECT MIN(column_name) FROM table_name WHERE condition;
+	SELECT MAX(column_name) FROM table_name WHERE condition;

@@ -1,0 +1,145 @@
+										JAVA
+										
+ANS 1 : Syntax error
+
+ANS 2 : Error
+
+ANS 3 : Error
+
+ANS 4 :	lenght is:4
+		sum of values is 200
+		
+ANS 6 : Method parameters can also be referred to as variables(or lcoal variables).information can be given to the 
+		method through parameters. we can have any number of parameters for the given method seperating them by coma.
+		
+ANS 7 :	compile time polymorphism is achived by method overloading. since method overloading  is having methods of same name
+		but differing in parameters. So during the compilation time when the jvm invokes the method there rises the ambiguity
+		it is then resolved by call a method based on arguments.
+		
+		class Add{
+		
+		void sum(int a, int b)
+		{
+			result = a+b;
+			System.out.println(result);
+		}
+		void sum(int a, int b, int c)
+		{
+			result = a+b+c;
+			System.out.println(result);
+		}
+		
+		public static void main(String[] args)
+		{
+			Add add = new Add();
+			add.sum(1,2); // invokes sum(int a, int b)
+			Add add2 = new Add();
+			add.sum(1,2,3); //sum(int a, int b, int c)
+		}
+		}
+		
+		we have taken a class named Add with a method named sum and have achived overloading in order to achive compile
+		time polymorphism we are calling the method based on arguments wherein it invokes that particular method.
+		
+ANS 9 :	Package basically is a folder inside a project.src which contains the class or .java files (source code).
+		a standard package is like - reverse domain.projectname
+		ex - com.xworkz.test
+		
+		IMPORT is keyword used to access the classes or package from a different class or even different package.
+		thre are two types of import's namely - explicit and implicit
+		implicit import refers to importing all predefined classes inside a class by using * operator.
+		while explicit import refers to importing the package of a class inside another class.
+		
+ANS 10 : Constructor chaining refers to calling a constructor from another constructor.
+		 There are two types of constructor chaining as -
+		 this chaining - calling a constructor from another constructor within the same class.
+		 super chaining - calling a constructor from another constructor from a different class(or extended class).
+		 
+		 class Chaining{
+		 
+		 int number;
+		 String name;
+		 String name2;
+		 
+		 Chaining(int number, String name){
+			this.number=number;
+			this.name=name;
+			System.out.println(nuber+name);
+		 }
+		 Chaining(int number, String name,String name2)
+		 {
+			this(number,name)
+			this.name2=name2;
+			System.out.println("this chaining"+nuber+name+name2);
+		}
+		}
+		Class Chain extends Chaining{
+		
+		String location
+		
+		Chain(String location)
+		{
+			super(number,name,name2) // calls the constructor(Chaining(int number, String name,String name2)) of class Chaining 
+			this.location=location;
+			System.out.println("super chaining"+nuber+name+name2+location);
+		}
+		
+		public static void main(string[] args)
+		{
+			Chaining ref = new Chain(12,"abc","xyz","bnglr");
+		
+		}
+		}
+		
+ANS 11 : public class Fibonacci {
+
+	static int n1 = 0, n2 = 1, n3 = 0;
+
+	static void printSeries(int count) {
+		if (count > 0) {
+			n3 = n1 + n2;
+			n1 = n2;
+			n2 = n3;
+			System.out.print(" " + n3);
+			printSeries(count - 1);
+		}
+	}
+
+	public static void main(String args[]) {
+		int count = 10;
+		System.out.print(n1 + " " + n2);
+		printSeries(count - 2);
+	}
+
+}
+
+ANS 13 : public class Example {
+	public static void main(String[] args) {
+
+	Scanner sc = new Scanner(System.in);
+	System.out.println("enter the num ");
+	int num = sc.nextInt();
+
+	if(num/2!=0)
+	{
+		System.out.println("num is odd");
+	}
+	else
+	{
+		System.out.println("num is even");
+	}
+}
+}
+
+ANS 14 : enumeration in java is datatype or customized datatype which contains a set of constants.
+		 the constants should always be in capital letters.
+		 enumeration can also be of class types where we can have methods and fields.
+		 These constants can be accessed by enumName.value
+		 
+ANS 15 : when we create an object the jvm reserves a portion of heap memory to store the object.
+
+ANS 16 : members of class include -
+		 1. fields
+		 2. methods
+		 3. constructor
+		 4. instance variables
